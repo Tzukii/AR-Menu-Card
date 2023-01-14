@@ -28,19 +28,28 @@
 
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
 
-    <script>
-      var firebaseConfig = {
-        apiKey: "AIzaSyAGELGNovlYNug9-86gjILoHlnfEHKGqCA",
-        authDomain: "ar-menu-card-a397d.firebaseapp.com",
-        projectId: "ar-menu-card-a397d",
-        storageBucket: "ar-menu-card-a397d.appspot.com",
-        messagingSenderId: "913028954553",
-        appId: "1:913028954553:web:35f11f282ebdbf15f91e68",
-        measurementId: "G-35Y0L20LEJ",
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBx1piYwBdmcpa6mjUdd40RaSdKKZn_nAQ",
+        authDomain: "ar-menu-card-ea1cf.firebaseapp.com",
+        projectId: "ar-menu-card-ea1cf",
+        storageBucket: "ar-menu-card-ea1cf.appspot.com",
+        messagingSenderId: "489526628477",
+        appId: "1:489526628477:web:111ff8ee4756a62f752114",
+        measurementId: "G-MF1RRXK3JF",
       };
+
       // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
     </script>
 
     <!-- Local StyleSheet -->
